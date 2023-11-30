@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Por Trabajar/css/styles.css">
 
-
 </head>
 
 <body>
@@ -23,19 +22,19 @@
         <nav class=" menu-escritorio navbar bg-primary" data-bs-theme="dark">
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/Por Trabajar/index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="/Por Trabajar/index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Por Trabajar/pages/servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/Por Trabajar/pages/diseños.html">Diseños</a>
+                    <a class="nav-link" href="/Por Trabajar/pages/diseños.html">Diseños</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Por Trabajar/pages/blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="/Por Trabajar/pages/contactos.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -63,10 +62,10 @@
                                 <a class="nav-link active menu-boton" aria-current="page" href="/Por Trabajar/pages/diseños.html">Diseños</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active menu-boton" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link active menu-boton" aria-current="page" href="/Por Trabajar/pages/blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active menu-boton" aria-current="page" href="#">Contacto</a>
+                                <a class="nav-link active menu-boton" aria-current="page" href="/Por Trabajar/pages/contactos.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -77,11 +76,16 @@
 
     </header>
 
-    <main class="espacio-costados">
+    <main class="espacio-costados fondo-blanco">
         <div class="doscolumnas">
             <div>
-                <h1 class="titulos">¡Podes elegir entre todos estos CVs!</h1>
-                <h3 class="centrar-textos"> Además podemos personalizarlo a tu gusto para que arrases en tus entrevistas</h3>
+                <h1 class="titulos texto-azul">¡Podes ver todos los diseños que tenemos en este carrusel!</h1>
+                <h3 class="centrar-textos texto-azul"> Sino también te dejamos este link para descargar y ver todas nuestras plantillas</h3>
+                <div class="centrar-contenido espacio-textos">
+                    <a href="https://drive.google.com/uc?id=1G-T1P5BnU0ridpzLH3KZ-0qnHakBFttE&export=download">
+                        <h3 class="boton-azul">Descargar</h3>
+                    </a>
+                </div>
             </div>
 
             <div class="carrusel">
@@ -161,33 +165,55 @@
         </div>
     </main>
 
+    <section>
+        <div class="doscolumnas">
+
+            <div>
+                <h1 class="titulos"> ¡También te brindamos un formulario para que puedas llenar todos tus datos facilmente!</h1>
+
+                <div class="centrar-contenido espacio-textos">
+                    <a href="https://drive.google.com/uc?id=1G-T1P5BnU0ridpzLH3KZ-0qnHakBFttE&export=download">
+                        <h3 class="boton-blanco">Formulario</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="centrar-contenido">
+                <img src="/Por Trabajar/assets/img/imagen-formulario.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
     <footer>
 
         <div class="footer-group">
             <ul>
                 <li> <a href="/Por Trabajar/index.html">Inicio</a></li>
                 <li> <a href="/Por Trabajar/pages/servicios.html">Servicios</a></li>
-                <li> <a href="#">Diseños</a></li>
-                <li> <a href="#">Blog</a></li>
-                <li> <a href="#">Contacto</a></li>
+                <li> <a href="/Por Trabajar/pages/diseños.html">Diseños</a></li>
+                <li> <a href="/Por Trabajar/pages/blog.html">Blog</a></li>
+                <li> <a href="/Por Trabajar/pages/contactos.html">Contacto</a></li>
             </ul>
         </div>
 
         <div class="footer-group-mobile">
             <div class="contactarnos">
-                <a href="#"> <img src="/Por Trabajar/assets/img/WSP.png" alt=""> </a>
+                <a href="https://wa.link/y401jx"> <img src="/Por Trabajar/assets/img/WSP.png" alt=""> </a>
             </div>
             <div class="contactarnos">
-                <a href="#"> <img src="/Por Trabajar/assets/img/IG.png" alt=""> </a>
+                <a href="https://instagram.com/trabajos.en.mendoza?igshid=bWg5aThqeGgwMmNw"> <img src="/Por Trabajar/assets/img/IG.png" alt=""> </a>
             </div>
             <div class="contactarnos">
-                <a href="#"> <img src="/Por Trabajar/assets/img/mail.png" alt=""> </a>
+                <a href="mailto:trabajos.en.mendoza@hotmail.com?subject=Consulta%20Web&body=%0Amailto:trabajos.en.mendoza@hotmail.com?subject=Consulta%20Web&body=%0A"> <img src="/Por Trabajar/assets/img/mail.png" alt=""> </a>
             </div>
         </div>
 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
