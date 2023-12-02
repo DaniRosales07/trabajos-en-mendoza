@@ -653,3 +653,7 @@
     .imagen-contactos img {
         max-width: 300px;
     }
+    
+    .formulariodecontacto {
+        padding: 2rem;
+    }
