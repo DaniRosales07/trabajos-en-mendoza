@@ -1,0 +1,17 @@
+   /*DISEÑOS */
+   
+   .carousel-control-prev {
+       left: auto;
+   }
+   
+   .carousel-control-next {
+       right: 4rem;
+   }
+   
+   .carrusel {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       max-width: 600px;
+       padding: 4rem 0rem;
+   }

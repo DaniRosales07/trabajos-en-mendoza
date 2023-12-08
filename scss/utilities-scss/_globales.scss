@@ -1,0 +1,105 @@
+/*GLOBALES ESCRITORIO*/
+
+*,
+*:before,
+*:after {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+    color: white;
+    background-image: url(../assets/img/fondo.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo-blanco {
+    background-color: white;
+    padding: 3rem 1rem;
+    color: #001E4B;
+}
+
+.fondo-gris {
+    background-color: #b9b9b9;
+    padding: 3rem 1rem;
+    color: #001E4B;
+}
+
+h1 {
+    Font-size: 4.8rem;
+}
+
+h2 {
+    Font-size: 4.0rem;
+}
+
+h3 {
+    Font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    Font-size: 2.8rem;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 2.2rem !important;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    width: 70%;
+}
+
+.imagenchica img {
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: #001E4B;
+}
+
+a:visited {
+    color: #001E4B;
+}
+
+.centrar-textos {
+    text-align: center;
+}
+
+.centrar-contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-azul {
+    color: #001E4B
+}
+
+.espacio-textos {
+    margin: 2rem 0rem;
+}
+
+.espacio-costados {
+    padding: 2rem 2rem;
+}
+
+.titulos {
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: center;
+    margin: 2rem 0rem;
+    font-weight: bold;
+}
+
+.titulos2 {
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: center;
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
+}

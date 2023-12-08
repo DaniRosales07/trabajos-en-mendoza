@@ -1,0 +1,28 @@
+    /*FOOTER*/
+    
+    footer {
+        background-color: #e0e0e0;
+        padding-bottom: 2rem;
+        .footer-group ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            li {
+                font-size: 4rem;
+                font-weight: bold;
+                margin: 2rem;
+            }
+        }
+    }
+    /*FOOTER - MOVIL*/
+    
+    .footer-group-mobile {
+        display: none;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 1.5rem;
+        img {
+            width: 30%;
+        }
+    }

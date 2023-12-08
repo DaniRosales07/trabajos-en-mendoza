@@ -1,0 +1,23 @@
+//utilidades
+@import 'utilities-scss/globales';
+@import 'utilities-scss/reset';
+@import 'utilities-scss/mixin';
+@import 'utilities-scss/maps';
+@import 'utilities-scss/loops';
+@import 'utilities-scss/lists';
+@import 'utilities-scss/variables';
+//layout
+@import 'layout-scss/header';
+@import 'layout-scss/footer';
+//grids
+@import 'components-scss/grids';
+@import 'components-scss/botones';
+@import 'components-scss/cards';
+//paginas
+@import 'pages-scss/diseños';
+@import 'pages-scss/blog';
+@import 'pages-scss/contactos';
+@import 'pages-scss/cvs';
+@import 'pages-scss/entradasblog';
+//mediaqueries
+@import 'utilities-scss/mediaqueries';

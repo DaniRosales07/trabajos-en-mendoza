@@ -1,0 +1,79 @@
+/*GRIDS*/
+
+//doscolumnas
+.doscolumnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+    align-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.columnauno {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.columnados {
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+//cuatro contenidos
+.cuatrocontenidos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "primero segundo" "tercero cuarto";
+    column-gap: 1rem;
+}
+
+.uno {
+    grid-area: primero;
+}
+
+.dos {
+    grid-area: segundo;
+}
+
+.tres {
+    grid-area: tercero;
+}
+
+.cuatro {
+    grid-area: cuarto;
+}
+
+//trescolumnas
+.trescolumnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    justify-items: center;
+    padding: 2rem 0rem;
+}
+
+//trespasos
+.trespasos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+//columnas blog
+.doscolumnas-blog {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.columnauno-blog {
+    padding: 2rem
+}
+
+.columnados-blog {
+    background-color: rgba(255, 255, 255, 0.678);
+    color: #001E4B;
+    padding: 2rem;
+}
