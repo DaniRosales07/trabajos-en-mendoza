@@ -4,13 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: #00B8A9;
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
     max-width: 80%;
     justify-content: space-between;
     padding: 6rem 2rem;
     transition: transform 0.3s;
-    border: #001E4B solid 4px;
+    border: white solid 4px;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     &:hover {
         transform: scale(1.1);
     }
@@ -25,9 +27,9 @@
 }
 
 .card-blog {
-    background-color: white;
+    background-color: #00B8A9;
     padding: 2rem;
-    max-width: 30%;
+    max-width: 35%;
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
@@ -37,6 +39,9 @@
     }
     img {
         width: 100%;
+    }
+    a {
+        color: #ffffff;
     }
 }
 

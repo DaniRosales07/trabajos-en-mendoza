@@ -7,7 +7,7 @@
     align-items: center;
     column-gap: 2rem;
     align-content: space-between;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
 }
 
 .columnauno {
@@ -74,6 +74,9 @@
 
 .columnados-blog {
     background-color: rgba(255, 255, 255, 0.678);
-    color: #001E4B;
+    color: #00B8A9;
     padding: 2rem;
+    a {
+        color: #00B8A9;
+    }
 }

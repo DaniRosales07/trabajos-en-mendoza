@@ -7,24 +7,32 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
+
+/* FONDOS */
+
 body {
     color: white;
-    background-image: url(../assets/img/fondo.png);
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
+}
+
+.fondo-celeste {
+    background-color: #00B8A9;
 }
 
 .fondo-blanco {
     background-color: white;
     padding: 3rem 1rem;
-    color: #001E4B !important;
+    color: #00B8A9 !important;
 }
 
 .fondo-gris {
-    background-color: #b9b9b9;
+    background-color: #e6e5e5;
     padding: 3rem 1rem;
-    color: #001E4B;
+    color: #02857a;
 }
+
+
+/*FUENTES - DESKTOP */
 
 h1 {
     Font-size: 4.8rem;
@@ -52,23 +60,6 @@ p {
     font-size: 2rem;
 }
 
-img {
-    width: 70%;
-}
-
-.imagenchica img {
-    width: 20%;
-}
-
-a {
-    text-decoration: none;
-    color: #001E4B;
-}
-
-a:visited {
-    color: #001E4B;
-}
-
 .centrar-textos {
     text-align: center;
 }
@@ -79,15 +70,20 @@ a:visited {
 }
 
 .texto-azul {
-    color: #001E4B
+    color: #00B8A9;
+}
+
+.texto-resaltado {
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.8rem;
+    color: #72f1e7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .espacio-textos {
     margin: 2rem 0rem;
-}
-
-.espacio-costados {
-    padding: 2rem 2rem;
 }
 
 .titulos {
@@ -102,4 +98,45 @@ a:visited {
     text-align: center;
     margin: 2rem 0rem;
     padding: 0rem 1rem;
+}
+
+.titulos-blancos {
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: center;
+    margin: 1rem 0rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulos-blog {
+    font-weight: bold;
+    text-align: left;
+    margin: 2rem 0rem;
+}
+
+
+/*IMAGENES*/
+
+img {
+    width: 70%;
+}
+
+.imagenchica img {
+    width: 30%;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.espacio-costados {
+    padding: 2rem 2rem 0rem 2rem;
 }

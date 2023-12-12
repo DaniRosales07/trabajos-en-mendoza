@@ -1,0 +1,100 @@
+/*BLOG - DESKTOP*/
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*CONTACTOS - DESKTOP*/
+
+.imagen-contactos {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem;
+}
+
+.imagen-contactos img {
+    max-width: 300px;
+}
+
+
+/*SERVICIOS-CV - DESKTOP*/
+
+.precios {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*DISEÑOS */
+
+.carousel-control-prev {
+    left: auto;
+}
+
+.carousel-control-next {
+    right: 4rem;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    padding: 4rem 0rem;
+}
+
+
+/*ENTRADAS - BLOG */
+
+.portada-blog1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url(../assets/img/portadablog1.png) no-repeat center / cover;
+    min-height: 300px;
+}
+
+.portada-blog2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url(../assets/img/portadablog2.png) no-repeat center / cover;
+    min-height: 300px;
+}
+
+.portada-blog3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url(../assets/img/portadablog3.png) no-repeat center / cover;
+    min-height: 300px;
+}
+
+.portada-blog4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url(../assets/img/portadablog4.png) no-repeat center / cover;
+    min-height: 300px;
+}
+
+.entradasdeblogs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: #00B8A9 solid 3px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 10px;
+}

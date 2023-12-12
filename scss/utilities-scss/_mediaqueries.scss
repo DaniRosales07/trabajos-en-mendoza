@@ -1,186 +1,249 @@
-    /*GLOBALES 768PX */
-    
-    @media (max-width: 768px) {
-        section {
-            padding-right: 2rem;
-        }
-        h1 {
-            Font-size: 4rem;
-        }
-        h2 {
-            Font-size: 3.5rem;
-        }
-        h3 {
-            Font-size: 3rem;
-        }
-        h4 {
-            Font-size: 2.5rem;
-        }
-        p {
-            font-size: 2rem;
-            font-weight: 700;
-        }
+/*GLOBALES 768PX */
+
+@media (max-width: 1024px) {
+    h1 {
+        Font-size: 4rem;
     }
-    /*GLOBALES 400PX */
-    
-    @media (max-width: 400px) {
-        h1 {
-            Font-size: 3.5rem;
-        }
-        h2 {
-            Font-size: 3rem;
-        }
-        h3 {
-            Font-size: 2.5rem;
-        }
-        h4 {
-            Font-size: 2rem;
-        }
-        p {
-            font-size: 1.8rem;
-        }
+    h2 {
+        Font-size: 3.5rem;
     }
-    /*MENÚ MOVIL */
-    
-    @media (max-width: 768px) {
-        .menu-movil {
-            display: flex;
-        }
-        .menu-escritorio {
+    h3 {
+        Font-size: 3rem;
+    }
+    h4 {
+        Font-size: 2.7rem;
+    }
+    p {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .texto-resaltado {
+        font-size: 4rem;
+    }
+}
+
+
+/*GLOBALES 768PX */
+
+@media (max-width: 768px) {
+    section {
+        padding-right: 2rem;
+    }
+    h1 {
+        Font-size: 4rem;
+    }
+    h2 {
+        Font-size: 3.5rem;
+    }
+    h3 {
+        Font-size: 3rem;
+    }
+    h4 {
+        Font-size: 2.5rem;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .texto-resaltado {
+        font-size: 4rem;
+    }
+}
+
+
+/*GLOBALES 400PX */
+
+@media (max-width: 400px) {
+    h1 {
+        Font-size: 3.5rem;
+    }
+    h2 {
+        Font-size: 3rem;
+    }
+    h3 {
+        Font-size: 2.5rem;
+    }
+    h4 {
+        Font-size: 2rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    .texto-resaltado {
+        font-size: 3.5rem;
+    }
+}
+
+
+/*MENÚ MOVIL */
+
+@media (max-width: 768px) {
+    .menu-movil {
+        display: flex;
+    }
+    .menu-escritorio {
+        display: none;
+    }
+}
+
+
+/*FOOTER MOVIL*/
+
+@media (max-width: 768px) {
+    footer {
+        .footer-group ul {
             display: none;
         }
     }
-    /*FOOTER MOVIL*/
-    
-    @media (max-width: 768px) {
-        footer {
-            .footer-group ul {
-                display: none;
-            }
-        }
-        .footer-group-mobile {
-            display: flex;
-        }
+    .footer-group-mobile {
+        display: flex;
     }
-    /*MAIN - INICIO - TABLET */
-    
-    @media (max-width: 1024px) {
-        .doscolumnas {
-            grid-template-columns: 1fr;
-        }
-        .columnados {
-            justify-content: center;
-        }
+}
+
+
+/*MAIN - INICIO - TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .doscolumnas {
+        grid-template-columns: 1fr;
     }
-    /*MAIN - INICIO - MOVIL */
-    
-    @media (max-width: 768px) {
-        .doscolumnas {
-            grid-template-columns: 1fr;
-        }
-        .columnados {
-            justify-content: center;
-        }
+    .columnados {
+        justify-content: center;
     }
-    /*SECTION - DESTACADOS - MOVIL*/
-    
-    @media (max-width: 768px) {
-        .imagenchica img {
-            width: 40%;
-        }
-        .cuatrocontenidos {
-            display: flex;
-            flex-direction: column;
-        }
+}
+
+
+/*MAIN - INICIO - MOVIL */
+
+@media (max-width: 768px) {
+    .doscolumnas {
+        grid-template-columns: 1fr;
     }
-    /* NUESTROS SERVICIOS - TABLET*/
-    
-    @media (max-width: 1024px) {
-        .trescolumnas {
-            grid-template-columns: 1fr;
-        }
-        .caja-servicios {
-            margin-bottom: 3rem;
-            max-width: 55%;
-        }
-        .doscolumnas-garantia {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-        .comprarboton {
-            width: 40%;
-        }
+    .columnauno {
+        padding-left: 0;
     }
-    /*NUESTROS SERVICIOS MOVIL*/
-    
-    @media (max-width: 768px) {
-        .trescolumnas {
-            grid-template-columns: 1fr;
-        }
-        .caja-servicios {
-            margin-bottom: 3rem;
-            max-width: 65%;
-        }
-        .doscolumnas-garantia {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-        .comprarboton {
-            width: 40%;
-        }
+    .columnados {
+        justify-content: center;
     }
-    /*SERVICIOS-CV - TABLET*/
-    
-    @media (max-width: 1024px) {
-        .trespasos {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-        .columnados img {
-            display: none;
-        }
+}
+
+
+/*DESTACADOS - INICIO - MOVIL*/
+
+@media (max-width: 768px) {
+    .imagenchica img {
+        width: 40%;
     }
-    /*SERVICIOS-CV - MOVIL*/
-    
-    @media (max-width: 768px) {
-        .trespasos {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-        .precios {
-            flex-direction: column;
-            align-items: center;
-        }
-        .card-precios {
-            max-width: 50%;
-        }
-        .columnados img {
-            display: none;
-        }
+    .cuatrocontenidos {
+        display: flex;
+        flex-direction: column;
     }
-    /*BLOG - MOVIL */
-    
-    @media (max-width: 768px) {
-        .blog {
-            flex-wrap: nowrap;
-            flex-direction: column;
-            padding: 0rem 0rem 1rem 1rem;
-        }
-        .card-blog {
-            max-width: none;
-        }
+}
+
+
+/* NUESTROS SERVICIOS - TABLET*/
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .trescolumnas {
+        grid-template-columns: 1fr;
     }
-    /*ENTRADAS-BLOG - TABLET */
-    
-    @media (max-width: 1024px) {
-        .doscolumnas-blog {
-            grid-template-columns: 1fr;
-        }
+    .caja-servicios {
+        margin-bottom: 3rem;
+        max-width: 55%;
     }
-    /*ENTRADAS-BLOG - MOVIL */
-    
-    @media (max-width: 768px) {
-        .doscolumnas-blog {
-            grid-template-columns: 1fr;
-        }
+    .doscolumnas-garantia {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
+}
+
+
+/*NUESTROS SERVICIOS MOVIL*/
+
+@media (max-width: 768px) {
+    .trescolumnas {
+        grid-template-columns: 1fr;
+    }
+    .caja-servicios {
+        margin-bottom: 3rem;
+        max-width: 65%;
+    }
+    .doscolumnas-garantia {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+/*SERVICIOS-CV - TABLET*/
+
+@media (max-width: 1024px) {
+    .trespasos {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .columnados img {
+        max-width: 300px;
+    }
+}
+
+
+/*SERVICIOS-CV - MOVIL*/
+
+@media (max-width: 768px) {
+    .trespasos {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .precios {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-precios {
+        max-width: 55%;
+    }
+}
+
+
+/*BLOG - TABLET */
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .card-blog {
+        max-width: 60%;
+        margin: 2rem;
+    }
+}
+
+
+/*BLOG - MOVIL */
+
+@media (max-width: 768px) {
+    .blog {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 0rem 1rem 1rem;
+    }
+    .card-blog {
+        max-width: 70%;
+    }
+}
+
+
+/*ENTRADAS-BLOG - TABLET */
+
+@media (max-width: 1024px) {
+    .doscolumnas-blog {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*ENTRADAS-BLOG - MOVIL */
+
+@media (max-width: 768px) {
+    .doscolumnas-blog {
+        grid-template-columns: 1fr;
+    }
+}
