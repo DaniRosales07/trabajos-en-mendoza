@@ -293,11 +293,11 @@ footer .footer-group ul li {
 
 .columnados-blog {
   background-color: rgba(255, 255, 255, 0.678);
-  color: #00B8A9;
+  color: #007994;
   padding: 2rem;
 }
 .columnados-blog a {
-  color: #00B8A9;
+  color: #007994;
 }
 
 /*CARDS*/
@@ -473,7 +473,7 @@ footer .footer-group ul li {
   display: flex;
   justify-content: center;
   text-align: center;
-  border-bottom: #00B8A9 solid 3px;
+  border-bottom: #007994 solid 3px;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.801);
   border-radius: 10px;
