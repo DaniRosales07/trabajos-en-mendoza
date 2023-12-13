@@ -15,19 +15,13 @@ body {
 }
 
 .fondo-celeste {
-  background-color: #00B8A9;
+  background-color: #007d73;
 }
 
 .fondo-blanco {
   background-color: white;
   padding: 3rem 1rem;
-  color: #00B8A9 !important;
-}
-
-.fondo-gris {
-  background-color: #e6e5e5;
-  padding: 3rem 1rem;
-  color: #02857a;
+  color: #007d73 !important;
 }
 
 /*FUENTES - DESKTOP */
@@ -149,12 +143,12 @@ a:visited {
 }
 
 .nav-link {
-  color: #00B8A9 !important;
+  color: #007d73 !important;
 }
 
 .nav-link.active {
   color: white !important;
-  background-color: #00B8A9 !important;
+  background-color: #007d73 !important;
 }
 
 .bg-primary {
@@ -179,7 +173,7 @@ a:visited {
 }
 
 .offcanvas-body {
-  background-color: #00B8A9 !important;
+  background-color: #007d73 !important;
   background-size: cover !important;
 }
 
@@ -202,7 +196,7 @@ a:visited {
 
 /*FOOTER*/
 footer {
-  background-color: #00B8A9;
+  background-color: #007d73;
   padding-bottom: 2rem;
 }
 footer .footer-group ul {
@@ -311,7 +305,7 @@ footer .footer-group ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00B8A9;
+  background-color: #007d73;
   box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
   max-width: 80%;
   justify-content: space-between;
@@ -334,7 +328,7 @@ footer .footer-group ul li {
 }
 
 .card-blog {
-  background-color: #00B8A9;
+  background-color: #007d73;
   padding: 2rem;
   max-width: 35%;
   margin: 1rem;
@@ -370,7 +364,7 @@ footer .footer-group ul li {
 .boton-azul {
   color: white;
   font-weight: bold;
-  background-color: #00B8A9;
+  background-color: #007d73;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
@@ -381,7 +375,7 @@ footer .footer-group ul li {
 }
 
 .boton-blanco {
-  color: #00B8A9;
+  color: #007d73;
   font-weight: bold;
   background-color: white;
   border-radius: 10px;
