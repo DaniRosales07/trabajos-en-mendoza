@@ -1,6 +1,8 @@
 /*GRIDS*/
 
-//doscolumnas
+
+/*doscolumnas*/
+
 .doscolumnas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,7 +24,9 @@
     padding-right: 2rem;
 }
 
-//cuatro contenidos
+
+/*cuatro contenidos*/
+
 .cuatrocontenidos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,7 +50,9 @@
     grid-area: cuarto;
 }
 
-//trescolumnas
+
+/*trescolumnas*/
+
 .trescolumnas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -55,14 +61,18 @@
     padding: 2rem 0rem;
 }
 
-//trespasos
+
+/*trespasos - servicios -desktop*/
+
 .trespasos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
 
-//columnas blog
+
+/*columnas blog*/
+
 .doscolumnas-blog {
     display: grid;
     grid-template-columns: 3fr 2fr;
