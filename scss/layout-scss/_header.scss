@@ -1,60 +1,57 @@
-/* MENU ESCRITORIO */
-
-.nav-item {
-    font-size: 2rem !important;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: #007994 !important;
-}
-
-.active {
-    color: white !important;
-    background-color: #007994 !important;
-}
-
-.bg-primary {
-    background-color: rgb(245, 245, 245) !important;
-}
-
-.menu-movil {
-    display: none;
-}
-
-
-/* MENU MOVIL */
-
-.navbar {
-    padding: 2rem 0rem !important;
-}
-
-.fixed-top {
-    position: relative;
-}
-
-.offcanvas {
-    max-width: 80%;
-}
-
-.offcanvas-body {
-    background-color: #007994 !important;
-    background-size: cover !important;
-}
-
-.navbar-toggler {
-    padding: 2rem !important;
-}
-
-.navbar-toggler-icon {
-    background-image: url(../assets/img/menu.png) !important;
-    width: 2.5em !important;
-    height: 2.5em !important;
-}
-
-.menu-boton {
-    color: white !important;
-    font-size: 2rem !important;
-    font-weight: bold !important;
-    border-bottom: 0.2rem solid white;
-}
+        /* MENU ESCRITORIO */
+        
+        .menu-escritorio {
+            &.bg-primary {
+                background-color: rgb(245, 245, 245) !important;
+                .nav {
+                    .nav-item {
+                        font-size: 2rem !important;
+                        font-weight: bold;
+                        .nav-link {
+                            color: #007994 !important;
+                        }
+                        .active {
+                            color: white !important;
+                            background-color: #007994 !important;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .menu-movil {
+            display: none;
+            &.navbar {
+                padding: 2rem 0rem !important;
+            }
+            &.fixed-top {
+                position: relative;
+            }
+            .container-fluid {
+                .navbar-toggler {
+                    padding: 2rem !important;
+                    .navbar-toggler-icon {
+                        background-image: url(../assets/img/menu.png) !important;
+                        width: 2.5em !important;
+                        height: 2.5em !important;
+                    }
+                }
+                .offcanvas {
+                    max-width: 80%;
+                    .offcanvas-body {
+                        background-color: #007994 !important;
+                        background-size: cover !important;
+                        ul {
+                            li {
+                                .menu-boton {
+                                    color: white !important;
+                                    font-size: 2rem !important;
+                                    font-weight: bold !important;
+                                    border-bottom: 0.2rem solid white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }

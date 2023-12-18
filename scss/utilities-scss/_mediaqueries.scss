@@ -2,19 +2,22 @@
 
 @media (max-width: 1024px) {
     h1 {
-        Font-size: 4rem;
+        font-size: nth($list: $fuentes-1024, $n: 1);
     }
     h2 {
-        Font-size: 3.5rem;
+        font-size: nth($list: $fuentes-1024, $n: 2);
     }
     h3 {
-        Font-size: 3rem;
+        font-size: nth($list: $fuentes-1024, $n: 3);
     }
     h4 {
-        Font-size: 2.7rem;
+        font-size: nth($list: $fuentes-1024, $n: 4);
+    }
+    h5 {
+        font-size: nth($list: $fuentes-1024, $n: 5);
     }
     p {
-        font-size: 2.2rem;
+        font-size: nth($list: $fuentes-1024, $n: 6);
         font-weight: 700;
     }
     .texto-resaltado {
@@ -29,25 +32,6 @@
     section {
         padding-right: 2rem;
     }
-    h1 {
-        Font-size: 4rem;
-    }
-    h2 {
-        Font-size: 3.5rem;
-    }
-    h3 {
-        Font-size: 3rem;
-    }
-    h4 {
-        Font-size: 2.5rem;
-    }
-    p {
-        font-size: 2rem;
-        font-weight: 700;
-    }
-    .texto-resaltado {
-        font-size: 4rem;
-    }
 }
 
 
@@ -55,19 +39,22 @@
 
 @media (max-width: 400px) {
     h1 {
-        Font-size: 3.5rem;
+        font-size: nth($list: $fuentes-400, $n: 1);
     }
     h2 {
-        Font-size: 3rem;
+        font-size: nth($list: $fuentes-400, $n: 2);
     }
     h3 {
-        Font-size: 2.5rem;
+        font-size: nth($list: $fuentes-400, $n: 3);
     }
     h4 {
-        Font-size: 2rem;
+        font-size: nth($list: $fuentes-400, $n: 4);
+    }
+    h5 {
+        font-size: nth($list: $fuentes-400, $n: 5);
     }
     p {
-        font-size: 1.8rem;
+        font-size: nth($list: $fuentes-400, $n: 6);
     }
     .texto-resaltado {
         font-size: 3.5rem;
@@ -118,6 +105,7 @@
 @media (max-width: 768px) {
     .doscolumnas {
         grid-template-columns: 1fr;
+        text-align: center;
     }
     .columnauno {
         padding-left: 0;
@@ -144,12 +132,9 @@
 /* NUESTROS SERVICIOS - TABLET*/
 
 @media (min-width:768px) and (max-width: 1024px) {
-    .trescolumnas {
-        grid-template-columns: 1fr;
-    }
     .caja-servicios {
         margin-bottom: 3rem;
-        max-width: 55%;
+        min-width: fit-content;
     }
     .doscolumnas-garantia {
         grid-template-columns: 1fr;
@@ -165,8 +150,9 @@
         grid-template-columns: 1fr;
     }
     .caja-servicios {
-        margin-bottom: 3rem;
-        max-width: 65%;
+        margin: 0rem 0rem 3rem 0rem;
+        max-width: 60%;
+        min-width: 200px;
     }
     .doscolumnas-garantia {
         grid-template-columns: 1fr;
@@ -191,26 +177,12 @@
 /*SERVICIOS-CV - MOVIL*/
 
 @media (max-width: 768px) {
-    .trespasos {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
     .precios {
         flex-direction: column;
         align-items: center;
     }
     .card-precios {
         max-width: 55%;
-    }
-}
-
-
-/*BLOG - TABLET */
-
-@media (min-width:768px) and (max-width: 1024px) {
-    .card-blog {
-        max-width: 60%;
-        margin: 2rem;
     }
 }
 
@@ -226,7 +198,8 @@
         padding: 0rem 0rem 1rem 1rem;
     }
     .card-blog {
-        max-width: 70%;
+        max-width: 60%;
+        min-width: 200px;
     }
 }
 
@@ -234,15 +207,6 @@
 /*ENTRADAS-BLOG - TABLET */
 
 @media (max-width: 1024px) {
-    .doscolumnas-blog {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/*ENTRADAS-BLOG - MOVIL */
-
-@media (max-width: 768px) {
     .doscolumnas-blog {
         grid-template-columns: 1fr;
     }

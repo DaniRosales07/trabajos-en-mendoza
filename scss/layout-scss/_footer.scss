@@ -4,9 +4,7 @@ footer {
     background-color: #007994;
     padding-bottom: 2rem;
     .footer-group ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexs (flex, row, center, center, center);
         list-style: none;
         li {
             font-size: 4rem;

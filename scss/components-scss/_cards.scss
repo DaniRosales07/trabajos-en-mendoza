@@ -1,14 +1,9 @@
 /*CARDS*/
 
 .caja-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #007994;
+    @include cards (6rem 2rem, #007994, white, 80%, 0, 0);
+    @include flexs ( flex, column, center, space-between, center);
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
-    max-width: 80%;
-    justify-content: space-between;
-    padding: 6rem 2rem;
     transition: transform 0.3s;
     border: white solid 4px;
     border-top-right-radius: 2rem;
@@ -19,19 +14,12 @@
 }
 
 .caja-interna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include flexs ( flex, column, center, center, center);
 }
 
 .card-blog {
-    background-color: #007994;
-    padding: 2rem;
-    max-width: 35%;
-    margin: 1rem;
-    border-radius: 5px;
+    @include cards (2rem, #007994, white, 35%, 5px, 2rem);
+    @include flexs ( flex, column, center, start, left);
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
     transition: transform 0.3s;
     &:hover {
@@ -46,12 +34,10 @@
 }
 
 .card-precios {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.486);
-    padding: 2rem 1rem;
-    max-width: 30%;
-    margin: 1rem;
-    border-radius: 10px;
+    @include cards (2rem 1rem, rgba(0, 0, 0, 0.486), white, 30%, 10px, 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
     transition: transform 0.3s;
     &:hover {

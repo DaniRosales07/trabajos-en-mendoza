@@ -29,29 +29,29 @@ body {
 /*FUENTES - DESKTOP */
 
 h1 {
-    Font-size: 4.8rem;
+    font-size: nth($list: $fuentes-desktop, $n: 1);
 }
 
 h2 {
-    Font-size: 4.0rem;
+    font-size: nth($list: $fuentes-desktop, $n: 2);
 }
 
 h3 {
-    Font-size: 3.5rem;
+    font-size: nth($list: $fuentes-desktop, $n: 3);
     font-weight: 700;
 }
 
 h4 {
-    Font-size: 2.8rem;
+    font-size: nth($list: $fuentes-desktop, $n: 4);
 }
 
 h5 {
+    font-size: nth($list: $fuentes-desktop, $n: 5) !important;
     font-weight: bold;
-    font-size: 2.2rem !important;
 }
 
 p {
-    font-size: 2rem;
+    font-size: nth($list: $fuentes-desktop, $n: 6);
 }
 
 .centrar-textos {
@@ -68,8 +68,7 @@ p {
 }
 
 .texto-resaltado {
-    font-family: 'Montserrat', sans-serif !important;
-    text-align: center;
+    @include titulos('Montserrat'!important, center, 0rem);
     font-weight: bold;
     font-size: 4.8rem;
     color: #72f1e7;
@@ -81,23 +80,17 @@ p {
 }
 
 .titulos {
-    font-family: 'Montserrat', sans-serif !important;
-    text-align: center;
-    margin: 2rem 0rem;
+    @include titulos('Montserrat'!important, center, 2rem 0rem);
     font-weight: bold;
 }
 
 .titulos2 {
-    font-family: 'Montserrat', sans-serif !important;
-    text-align: center;
-    margin: 2rem 0rem;
+    @include titulos('Montserrat'!important, center, 2rem 0rem);
     padding: 0rem 1rem;
 }
 
 .titulos-blancos {
-    font-family: 'Montserrat', sans-serif !important;
-    text-align: center;
-    margin: 1rem 0rem;
+    @include titulos('Montserrat'!important, center, 1rem 0rem);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
