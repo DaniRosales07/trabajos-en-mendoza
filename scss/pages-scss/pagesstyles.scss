@@ -1,77 +1,196 @@
-/*BLOG - DESKTOP*/
+/*SECTION - INDEX -DESKTOP */
 
-.blog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-/*CONTACTOS - DESKTOP*/
-
-.imagen-contactos {
-    display: flex;
-    justify-content: center;
-    padding: 0rem 1rem;
-    img {
-        max-width: 300px;
+.section-index {
+    div {
+        div {
+            &.cuatrocontenidos {
+                .cuatrocontenidos {
+                    @include grids (grid, repeat(2, 1fr));
+                    grid-template-areas: "primero segundo" "tercero cuarto";
+                    column-gap: 1rem;
+                    div {
+                        &.uno {
+                            grid-area: primero;
+                        }
+                        &.dos {
+                            grid-area: segundo;
+                        }
+                        &.tres {
+                            grid-area: tercero;
+                        }
+                        &.cuatro {
+                            grid-area: cuarto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 
-/*SERVICIOS-CV - DESKTOP*/
+/*SERVICIOS - DESKTOP*/
 
-.precios {
-    display: flex;
-    justify-content: center;
+.main-servicios {
+    div {
+        div {
+            &.trescolumnas {
+                @include grids (grid, repeat(3, 1fr));
+                column-gap: 2rem;
+                justify-items: center;
+                padding: 2rem 0rem;
+                div {
+                    &.caja-servicios {
+                        @include cards (6rem 2rem, #007994, white, 80%, 0, 0);
+                        @include flexs ( flex, column, center, space-between, center);
+                        box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+                        transition: transform 0.3s;
+                        border: white solid 4px;
+                        border-top-right-radius: 2rem;
+                        border-bottom-left-radius: 2rem;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        div {
+                            &.caja-interna {
+                                @include flexs ( flex, column, center, center, center);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 /*DISEÑOS */
 
-.carousel-control-prev {
-    left: auto;
-    height: 1px;
+.main-diseños {
+    div {
+        div {
+            &.carrusel {
+                @include flexs (flex, column, none, center, none);
+                max-width: 600px;
+                padding: 4rem 0rem;
+                .carousel-control-prev {
+                    left: auto;
+                    height: 1px;
+                }
+                .carousel-control-next {
+                    right: 4rem;
+                    height: 1px;
+                }
+            }
+        }
+    }
 }
 
-.carousel-control-next {
-    right: 4rem;
-    height: 1px;
-}
 
-.carrusel {
-    @include flexs (flex, column, none, center, none);
-    max-width: 600px;
-    padding: 4rem 0rem;
+/*BLOG - DESKTOP*/
+
+.main-blog {
+    div {
+        &.blog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+                &.card-blog {
+                    @include cards (2rem, #007994, white, 35%, 5px, 2rem);
+                    @include flexs ( flex, column, center, start, left);
+                    min-width: 200px;
+                    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+                    transition: transform 0.3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    img {
+                        width: 100%;
+                    }
+                    a {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 /*ENTRADAS - BLOG */
 
-.portada-blog1 {
-    @include portadasblog (flex, center, center, center, relative, 300px);
-    background: url(../assets/img/portadablog1.png) no-repeat center / cover;
+.main-entradasblog {
+    div {
+        &.portada-blog1 {
+            @include portadasblog (flex, center, center, center, relative, 300px);
+            background: url(../assets/img/portadablog1.png) no-repeat center / cover;
+        }
+        &.portada-blog2 {
+            @include portadasblog (flex, center, center, center, relative, 300px);
+            background: url(../assets/img/portadablog2.png) no-repeat center / cover;
+        }
+        &.portada-blog3 {
+            @include portadasblog (flex, center, center, center, relative, 300px);
+            background: url(../assets/img/portadablog3.png) no-repeat center / cover;
+        }
+        &.portada-blog4 {
+            @include portadasblog (flex, center, center, center, relative, 300px);
+            background: url(../assets/img/portadablog4.png) no-repeat center / cover;
+        }
+        &.doscolumnas-blog {
+            @include grids (grid, 2fr 1fr);
+            div {
+                &.columnauno-blog {
+                    padding: 2rem
+                }
+            }
+            div {
+                &.columnados-blog {
+                    background-color: rgba(255, 255, 255, 0.678);
+                    color: #007994;
+                    padding: 2rem;
+                    a {
+                        color: #007994;
+                    }
+                    h4 {
+                        &.entradasdeblogs {
+                            @include flexs (flex, row, center, center, center);
+                            border-bottom: #007994 solid 3px;
+                            padding: 1rem;
+                            background-color: rgba(255, 255, 255, 0.801);
+                            border-radius: 10px;
+                        }
+                    }
+                    div {
+                        &.entradasdeblogs {
+                            @include flexs (flex, row, center, center, center);
+                            border-bottom: #007994 solid 3px;
+                            padding: 1rem;
+                            background-color: rgba(255, 255, 255, 0.801);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.portada-blog2 {
-    @include portadasblog (flex, center, center, center, relative, 300px);
-    background: url(../assets/img/portadablog2.png) no-repeat center / cover;
-}
 
-.portada-blog3 {
-    @include portadasblog (flex, center, center, center, relative, 300px);
-    background: url(../assets/img/portadablog3.png) no-repeat center / cover;
-}
+/*CONTACTOS - DESKTOP*/
 
-.portada-blog4 {
-    @include portadasblog (flex, center, center, center, relative, 300px);
-    background: url(../assets/img/portadablog4.png) no-repeat center / cover;
-}
-
-.entradasdeblogs {
-    @include flexs (flex, row, center, center, center);
-    border-bottom: #007994 solid 3px;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 10px;
+.main-contactos {
+    div {
+        div {
+            &.imagen-contactos {
+                display: flex;
+                justify-content: center;
+                padding: 0rem 1rem;
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
 }
