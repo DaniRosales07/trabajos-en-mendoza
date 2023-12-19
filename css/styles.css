@@ -300,22 +300,22 @@ footer .footer-group ul li {
 
 /*pages*/
 /*SECTION - INDEX -DESKTOP */
-.section-index div div.cuatrocontenidos .cuatrocontenidos {
+.section-index div div.cuatrocontenidos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "primero segundo" "tercero cuarto";
   column-gap: 1rem;
 }
-.section-index div div.cuatrocontenidos .cuatrocontenidos div.uno {
+.section-index div div.cuatrocontenidos div.uno {
   grid-area: primero;
 }
-.section-index div div.cuatrocontenidos .cuatrocontenidos div.dos {
+.section-index div div.cuatrocontenidos div.dos {
   grid-area: segundo;
 }
-.section-index div div.cuatrocontenidos .cuatrocontenidos div.tres {
+.section-index div div.cuatrocontenidos div.tres {
   grid-area: tercero;
 }
-.section-index div div.cuatrocontenidos .cuatrocontenidos div.cuatro {
+.section-index div div.cuatrocontenidos div.cuatro {
   grid-area: cuarto;
 }
 
@@ -356,7 +356,7 @@ footer .footer-group ul li {
   text-align: center;
 }
 
-/*DISEÑOS */
+/*DISEÑOS - DESKTOP*/
 .main-diseños div div.carrusel {
   display: flex;
   flex-direction: column;
@@ -407,7 +407,7 @@ footer .footer-group ul li {
   color: #ffffff;
 }
 
-/*ENTRADAS - BLOG */
+/*ENTRADAS DE BLOG -DESKTOP */
 .main-entradasblog div.portada-blog1 {
   display: flex;
   align-items: center;
@@ -512,7 +512,6 @@ footer .footer-group ul li {
   }
   p {
     font-size: 2.2rem;
-    font-weight: 700;
   }
   .texto-resaltado {
     font-size: 4rem;
@@ -581,12 +580,24 @@ footer .footer-group ul li {
 }
 /*SECTION - INICIO - MOVIL*/
 @media (max-width: 768px) {
-  .imagenchica img {
-    width: 40%;
-  }
-  .cuatrocontenidos {
+  .section-index div div.cuatrocontenidos {
     display: flex;
     flex-direction: column;
+  }
+  .section-index div div.cuatrocontenidos div.imagenchica img {
+    width: 40%;
+  }
+  .section-index div div.cuatrocontenidos div.uno {
+    grid-area: primero;
+  }
+  .section-index div div.cuatrocontenidos div.dos {
+    grid-area: segundo;
+  }
+  .section-index div div.cuatrocontenidos div.tres {
+    grid-area: tercero;
+  }
+  .section-index div div.cuatrocontenidos div.cuatro {
+    grid-area: cuarto;
   }
 }
 /* NUESTROS SERVICIOS - TABLET*/
@@ -594,13 +605,6 @@ footer .footer-group ul li {
   .main-servicios div div.trescolumnas div.caja-servicios {
     margin-bottom: 3rem;
     min-width: fit-content;
-  }
-}
-/*PARA ARREGLAR*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .doscolumnas-garantia {
-    grid-template-columns: 1fr;
-    text-align: center;
   }
 }
 /*NUESTROS SERVICIOS MOVIL*/
@@ -612,13 +616,6 @@ footer .footer-group ul li {
     margin: 0rem 0rem 3rem 0rem;
     max-width: 60%;
     min-width: 200px;
-  }
-}
-/*PARA ARREGLAR */
-@media (max-width: 768px) {
-  .doscolumnas-garantia {
-    grid-template-columns: 1fr;
-    text-align: center;
   }
 }
 /*SERVICIOS-CV - MOVIL*/
@@ -661,7 +658,7 @@ footer .footer-group ul li {
 }
 /*ENTRADAS-BLOG - TABLET */
 @media (max-width: 1024px) {
-  .doscolumnas-blog {
+  .main-entradasblog div.doscolumnas-blog {
     grid-template-columns: 1fr;
   }
 }
