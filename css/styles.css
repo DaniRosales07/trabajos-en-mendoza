@@ -169,7 +169,7 @@ a:visited {
   padding: 2rem !important;
 }
 .menu-movil .container-fluid .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../assets/img/menu.png) !important;
+  background-image: url(../assets/img/menu.webp) !important;
   width: 2.5em !important;
   height: 2.5em !important;
 }
@@ -415,7 +415,7 @@ footer .footer-group ul li {
   text-align: center;
   position: relative;
   min-height: 300px;
-  background: url(../assets/img/portadablog1.png) no-repeat center/cover;
+  background: url(../assets/img/portadablog1.webp) no-repeat center/cover;
 }
 .main-entradasblog div.portada-blog2 {
   display: flex;
@@ -424,7 +424,7 @@ footer .footer-group ul li {
   text-align: center;
   position: relative;
   min-height: 300px;
-  background: url(../assets/img/portadablog2.png) no-repeat center/cover;
+  background: url(../assets/img/portadablog2.webp) no-repeat center/cover;
 }
 .main-entradasblog div.portada-blog3 {
   display: flex;
@@ -433,7 +433,7 @@ footer .footer-group ul li {
   text-align: center;
   position: relative;
   min-height: 300px;
-  background: url(../assets/img/portadablog3.png) no-repeat center/cover;
+  background: url(../assets/img/portadablog3.webp) no-repeat center/cover;
 }
 .main-entradasblog div.portada-blog4 {
   display: flex;
@@ -442,7 +442,7 @@ footer .footer-group ul li {
   text-align: center;
   position: relative;
   min-height: 300px;
-  background: url(../assets/img/portadablog4.png) no-repeat center/cover;
+  background: url(../assets/img/portadablog4.webp) no-repeat center/cover;
 }
 .main-entradasblog div.doscolumnas-blog {
   display: grid;

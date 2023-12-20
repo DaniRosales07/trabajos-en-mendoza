@@ -122,19 +122,19 @@
     div {
         &.portada-blog1 {
             @include portadasblog (flex, center, center, center, relative, 300px);
-            background: url(../assets/img/portadablog1.png) no-repeat center / cover;
+            background: url(../assets/img/portadablog1.webp) no-repeat center / cover;
         }
         &.portada-blog2 {
             @include portadasblog (flex, center, center, center, relative, 300px);
-            background: url(../assets/img/portadablog2.png) no-repeat center / cover;
+            background: url(../assets/img/portadablog2.webp) no-repeat center / cover;
         }
         &.portada-blog3 {
             @include portadasblog (flex, center, center, center, relative, 300px);
-            background: url(../assets/img/portadablog3.png) no-repeat center / cover;
+            background: url(../assets/img/portadablog3.webp) no-repeat center / cover;
         }
         &.portada-blog4 {
             @include portadasblog (flex, center, center, center, relative, 300px);
-            background: url(../assets/img/portadablog4.png) no-repeat center / cover;
+            background: url(../assets/img/portadablog4.webp) no-repeat center / cover;
         }
         &.doscolumnas-blog {
             @include grids (grid, 2fr 1fr);
