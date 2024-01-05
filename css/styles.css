@@ -125,6 +125,10 @@ img {
   width: 30%;
 }
 
+.logo img {
+  width: 100%;
+}
+
 /* LINKS */
 a {
   text-decoration: none;
@@ -165,11 +169,14 @@ a:visited {
 .menu-movil.fixed-top {
   position: relative;
 }
+.menu-movil .container-fluid {
+  flex-wrap: nowrap !important;
+}
 .menu-movil .container-fluid .navbar-toggler {
   padding: 2rem !important;
 }
 .menu-movil .container-fluid .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../assets/img/menu.webp) !important;
+  background-image: url(../assets/img/menu.png) !important;
   width: 2.5em !important;
   height: 2.5em !important;
 }

@@ -28,10 +28,11 @@
                 position: relative;
             }
             .container-fluid {
+                flex-wrap: nowrap !important;
                 .navbar-toggler {
                     padding: 2rem !important;
                     .navbar-toggler-icon {
-                        background-image: url(../assets/img/menu.webp) !important;
+                        background-image: url(../assets/img/menu.png) !important;
                         width: 2.5em !important;
                         height: 2.5em !important;
                     }
