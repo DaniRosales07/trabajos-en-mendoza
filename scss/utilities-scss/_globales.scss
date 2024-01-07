@@ -11,18 +11,18 @@
 /* FONDOS */
 
 body {
-    color: white;
-    background-color: white;
+    color: $color-primario;
+    background-color: $color-primario;
 }
 
 .fondo-celeste {
-    background-color: #007994;
+    background-color: $color-secundario;
 }
 
 .fondo-blanco {
-    background-color: white;
+    background-color: $color-primario;
     padding: 3rem 1rem;
-    color: #007994 !important;
+    color: $color-secundario !important;
 }
 
 
@@ -64,7 +64,7 @@ p {
 }
 
 .texto-azul {
-    color: #007994;
+    color: $color-secundario;
 }
 
 .texto-resaltado {
@@ -121,11 +121,11 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: $color-primario;
 }
 
 a:visited {
-    color: white;
+    color: $color-primario;
 }
 
 .espacio-costados {

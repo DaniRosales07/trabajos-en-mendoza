@@ -1,4 +1,4 @@
-/*doscolumnas*/
+/*doscolumnas - DESKTOP */
 
 .doscolumnas {
     @include grids (grid, repeat(2, 1fr));
@@ -24,7 +24,7 @@
 }
 
 
-/*trespasos - servicios -desktop*/
+/*trespasos - desktop*/
 
 .trespasos {
     @include grids (grid, repeat(2, 1fr));

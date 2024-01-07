@@ -1,7 +1,7 @@
 /*FOOTER*/
 
 footer {
-    background-color: #007994;
+    background-color: $color-secundario;
     padding-bottom: 2rem;
     .footer-group ul {
         @include flexs (flex, row, center, center, center);

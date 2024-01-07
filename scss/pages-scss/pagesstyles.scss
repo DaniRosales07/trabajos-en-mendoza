@@ -39,11 +39,11 @@
                 padding: 2rem 0rem;
                 div {
                     &.caja-servicios {
-                        @include cards (6rem 2rem, #007994, white, 80%, 0, 0);
+                        @include cards (6rem 2rem, $color-secundario, $color-primario, 80%, 0, 0);
                         @include flexs ( flex, column, center, space-between, center);
                         box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
                         transition: transform 0.3s;
-                        border: white solid 4px;
+                        border: $color-primario solid 4px;
                         border-top-right-radius: 2rem;
                         border-bottom-left-radius: 2rem;
                         &:hover {
@@ -95,7 +95,7 @@
             justify-content: center;
             div {
                 &.card-blog {
-                    @include cards (2rem, #007994, white, 35%, 5px, 2rem);
+                    @include cards (2rem, $color-secundario, $color-primario, 35%, 5px, 2rem);
                     @include flexs ( flex, column, center, start, left);
                     min-width: 200px;
                     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
@@ -146,15 +146,15 @@
             div {
                 &.columnados-blog {
                     background-color: rgba(255, 255, 255, 0.678);
-                    color: #007994;
+                    color: $color-secundario;
                     padding: 2rem;
                     a {
-                        color: #007994;
+                        color: $color-secundario;
                     }
                     h4 {
                         &.entradasdeblogs {
                             @include flexs (flex, row, center, center, center);
-                            border-bottom: #007994 solid 3px;
+                            border-bottom: $color-secundario solid 3px;
                             padding: 1rem;
                             background-color: rgba(255, 255, 255, 0.801);
                             border-radius: 10px;
@@ -163,7 +163,7 @@
                     div {
                         &.entradasdeblogs {
                             @include flexs (flex, row, center, center, center);
-                            border-bottom: #007994 solid 3px;
+                            border-bottom: $color-secundario solid 3px;
                             padding: 1rem;
                             background-color: rgba(255, 255, 255, 0.801);
                             border-radius: 10px;

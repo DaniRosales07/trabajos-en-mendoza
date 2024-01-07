@@ -5,7 +5,7 @@
     justify-content: center;
     div {
         &.card-precios {
-            @include cards (2rem 1rem, rgba(0, 0, 0, 0.486), white, 30%, 10px, 1rem);
+            @include cards (2rem 1rem, rgba(0, 0, 0, 0.486), $color-primario, 30%, 10px, 1rem);
             display: flex;
             flex-direction: column;
             align-items: center;

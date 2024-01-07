@@ -8,11 +8,11 @@
                         font-size: 2rem !important;
                         font-weight: bold;
                         .nav-link {
-                            color: #007994 !important;
+                            color: $color-secundario !important;
                         }
                         .active {
-                            color: white !important;
-                            background-color: #007994 !important;
+                            color: $color-primario !important;
+                            background-color: $color-secundario !important;
                         }
                     }
                 }
@@ -40,15 +40,15 @@
                 .offcanvas {
                     max-width: 80%;
                     .offcanvas-body {
-                        background-color: #007994 !important;
+                        background-color: $color-secundario !important;
                         background-size: cover !important;
                         ul {
                             li {
                                 .menu-boton {
-                                    color: white !important;
+                                    color: $color-primario !important;
                                     font-size: 2rem !important;
                                     font-weight: bold !important;
-                                    border-bottom: 0.2rem solid white;
+                                    border-bottom: 0.2rem solid $color-primario;
                                 }
                             }
                         }

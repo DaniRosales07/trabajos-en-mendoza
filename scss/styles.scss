@@ -1,6 +1,7 @@
 /*utilities*/
 
 @import 'utilities-scss/reset';
+@import 'utilities-scss/variables';
 @import 'utilities-scss/mixin';
 @import 'utilities-scss/lists';
 @import 'utilities-scss/globales';
@@ -10,7 +11,7 @@
 @import 'layout-scss/header';
 @import 'layout-scss/footer';
 
-/*grids*/
+/*componentes*/
 
 @import 'components-scss/grids';
 @import 'components-scss/cards';

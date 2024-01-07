@@ -1,7 +1,7 @@
 /*BOTONES*/
 
 .boton-azul {
-    @include botones (white, bold, #007994, 10px, 1rem);
+    @include botones ($color-primario, bold, $color-secundario, 10px, 1rem);
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
     transition: transform 0.3s;
     &:hover {
@@ -10,7 +10,7 @@
 }
 
 .boton-blanco {
-    @include botones (#007994, bold, white, 10px, 1rem);
+    @include botones ($color-secundario, bold, $color-primario, 10px, 1rem);
     box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
     transition: transform 0.3s;
     &:hover {
