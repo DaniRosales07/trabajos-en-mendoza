@@ -17,6 +17,7 @@ body {
 
 .fondo-celeste {
     background-color: $color-secundario;
+    padding: 3rem 1rem;
 }
 
 .fondo-blanco {
@@ -130,4 +131,9 @@ a:visited {
 
 .espacio-costados {
     padding: 2rem 2rem 0rem 2rem;
+}
+
+.flexing {
+    display: flex;
+    justify-content: center;
 }

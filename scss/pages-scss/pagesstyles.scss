@@ -33,7 +33,7 @@
     div {
         div {
             &.trescolumnas {
-                @include grids (grid, repeat(3, 1fr));
+                @include grids (grid, repeat(4, 1fr));
                 column-gap: 2rem;
                 justify-items: center;
                 padding: 2rem 0rem;
