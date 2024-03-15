@@ -55,14 +55,26 @@
     }
 
     function updateCartTotal() {
-        // Calcula el total del carrito
-        cartTotal = cart.reduce(function(total, item) {
-            return total + item.price;
-        }, 0);
+        // Recupera el total del carrito del Local Storage, si está disponible
+        var storedCartTotal = JSON.parse(localStorage.getItem('cartTotal'));
+
+        // Si hay un total almacenado en el Local Storage, lo muestra
+        if (storedCartTotal !== null) {
+            cartTotal = storedCartTotal;
+        } else {
+            // Calcula el total del carrito solo si hay elementos en él
+            if (cart.length > 0) {
+                cartTotal = cart.reduce(function(total, item) {
+                    return total + item.price;
+                }, 0);
+            }
+        }
 
         // Actualiza el elemento HTML con el total
         document.getElementById('cartTotal').textContent = cartTotal;
     }
+    window.onload = function() { updateCartTotal();
+        updateCartUI(); };
 
     function finalizarCompra() {
         // Verifica si el carrito está vacío
@@ -71,7 +83,7 @@
             return; // Detiene la ejecución de la función si el carrito está vacío
         }
 
-        // Construye el mensaje con la descripción de cada elemento del carrito
+        // Mensaje del Carrito con Descripción
         var mensaje = 'Hola buen día, vengo del sitio Web de Trabajos en Mendoza. Me interesan los siguientes productos:' + ' ';
         cart.forEach(function(item) {
             mensaje += item.name + ' - $' + item.price + ' // ';
@@ -83,6 +95,6 @@
         // Encuentra y reemplaza los espacios con %20 para el formato correcto en la URL
         mensaje = mensaje.replace(/ /g, '%20');
 
-        // Redirige a WhatsApp con el mensaje construido
+        // Envia el Mensaje por Whatsapp
         window.location.href = 'https://api.whatsapp.com/send?phone=+5492615022513&text=' + mensaje;
     }

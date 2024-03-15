@@ -5,15 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diseño de Curriculum Vitae, personalizados y de alto impacto. De forma fácil y sencilla, con valores accesibles y en tiempo record">
-    <meta name="keywords" content="Trabajos, en, Mendoza, Diseño, de, Curriculum, CV, ofertas, trabajo , empleo">
-    <title>Trabajos en Mendoza | Servicios | Curriculum Vitae |</title>
+    <meta name="description" content="Ofertas de Trabajo en Mendoza Argentina, Servicio de Diseño de Curriculum online , Ofertas laborales, ofertas de servicios, para emprendedores, empleados y empresas. De forma fácil y sencilla, con valores accesibles y algunos totalmente gratis">
+    <meta name="keywords" content="Trabajos, en, Mendoza, Diseño, de, Curriculum, CV, ofertas, trabajo, empleo">
+    <title>Trabajos en Mendoza | SERVICIOS |</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4147908295380919" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-
     <!-- FAVICON -->
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 
@@ -31,13 +30,13 @@
                     <a class="nav-link" aria-current="page" href="../index.html" title="Inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/servicios.html" title="Servicios">Servicios</a>
+                    <a class="nav-link" href="./servicios.html" title="Servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/diseños.html" title="Diseños">Diseños</a>
+                    <a class="nav-link active" href="./miscompras.html" title="MisCompras">MisCompras</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/miscompras.html" title="MisCompras">MisCompras</a>
+                    <a class="nav-link" href="./diseños.html" title="Diseños">Diseños</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/blog.html" title="Blog">Blog</a>
@@ -68,10 +67,10 @@
                                 <a class="nav-link active menu-boton" aria-current="page" href="../pages/servicios.html" title="Servicios">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active menu-boton" aria-current="page" href="../pages/diseños.html" title="Diseños">Diseños</a>
+                                <a class="nav-link active menu-boton" aria-current="page" href="../pages/miscompras.html" title="MisCompras">MisCompras</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active menu-boton" aria-current="page" href="../pages/miscompras.html" title="MisCompras">MisCompras</a>
+                                <a class="nav-link active menu-boton" aria-current="page" href="../pages/diseños.html" title="Diseños">Diseños</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active menu-boton" aria-current="page" href="../pages/blog.html" title="Blog">Blog</a>
@@ -88,64 +87,26 @@
 
     </header>
 
-    <!-- SERVICIOS -->
+    <!-- CARRITO -->
+    <section>
+        <div class="portada-carrito">
+            <h1 class="titulos-blancos espacio-costados">"Realiza tu compra en el mejor lugar, con nuestra garantía de calidad"</h1>
+        </div>
+    </section>
 
-    <main class="fondo-celeste espacio-costados">
-        <h2 class="titulos-blancos">¡Bienvenido a nuestros servicios de Diseño de Curriculum! <br> Elige el pack de CV que quieras para vos</h2>
-        <div class="precios" id="services">
+    <main class="fondo-blanco centrar-textos carrito">
+        <div id="cart" class="miscompras">
+            <h2 class="titulos-blancos">Mis Compras</h2>
+            <h4 class="centrar-textos espacio-costados">Una vez que des click en finalizar, te redireccionaremos a nuestro Whatsapp para poder abonar tu Servicio</h4>
 
-            <div class="card-precios" onclick="addToCart('Optimización Linkedin', 3000)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/blog4.webp" alt="imagen-servicio-cv1" title="imagen-servicio-cv1">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">Optimización de Perfil de LinkedIn</h3>
-                    <h4 class="centrar-textos">Optimización en base a objetivo laboral</h4>
-                    <h3 class="centrar-textos">$3000</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4 class="centrar-textos">Agregar al Carrito</h4>
-                </div>
+            <ul id="cartItems"></ul>
+            <div class="flexing">
+                <h4 class="titulos-blancos">Total: $ </h4>
+                <h4 id="cartTotal" class="titulos-blancos">0</h4>
             </div>
-
-
-            <div class="card-precios" onclick="addToCart('Perfil Portales', 3000)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/blog3.webp" alt="imagen-servicio-cv2" title="imagen-servicio-cv2">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">Perfil en Portales</h3>
-                    <h4 class="centrar-textos">Perfil en Computrabajo, Bumeran e Indeed</h4>
-                    <h3 class="centrar-textos">$3000</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4 class="centrar-textos">Agregar al Carrito</h4>
-                </div>
-            </div>
-
-            <div class="card-precios" onclick="addToCart('Guía Trabajo Record', 5000)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/cv3.webp" alt="imagen-servicio-cv3" title="imagen-servicio-cv3">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">Guía "Trabajo en Tiempo Record"</h3>
-                    <h4 class="centrar-textos">Guía de más de 40 hojas para tu búsqueda laboral paso a paso</h4>
-                    <h3 class="centrar-textos"> <s>$10000</s> <br> Oferta $5000</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4 class="centrar-textos">Agregar al Carrito</h4>
-                </div>
-            </div>
+            <button class="boton-azul" onclick="finalizarCompra()"><h4 class="titulos-blancos">Finalizar Compra</h4></button>
         </div>
     </main>
-
-    <section class="fondo-blanco centrar-textos espacio-textos">
-        <button class="boton-azul">
-        <a href="/pages/miscompras.html">
-        <h3>Ir a mis compras</h3>
-    </a>
-       </button>
-    </section>
 
     <footer>
 
@@ -153,8 +114,8 @@
             <ul>
                 <li> <a href="../index.html" title="Inicio">Inicio</a></li>
                 <li> <a href="../pages/servicios.html" title="Servicios">Servicios</a></li>
-                <li> <a href="../pages/diseños.html" title="Diseños">Diseños</a></li>
                 <li> <a href="../pages/miscompras.html" title="MisCompras">MisCompras</a></li>
+                <li> <a href="../pages/diseños.html" title="Diseños">Diseños</a></li>
                 <li> <a href="../pages/blog.html" title="Blog">Blog</a></li>
                 <li> <a href="../pages/contactos.html" title="Contacto">Contacto</a></li>
             </ul>

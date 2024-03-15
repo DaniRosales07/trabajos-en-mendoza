@@ -1,3 +1,16 @@
+.portada-carrito {
+    @include portadasblog (flex, center, center, center, relative, 300px);
+    flex-direction: column;
+    background: url(../assets/img/portadablog1.webp) no-repeat center / cover;
+}
+
+.miscompras {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: solid $color-secundario;
+}
+
 .carrito {
     #cart {
         padding: 10px;
