@@ -351,6 +351,12 @@ footer .footer-group ul li {
   transition: transform 0.3s;
 }
 
+.toastify {
+  font-size: 2.5em;
+  padding: 2rem 2.8rem !important;
+  font-weight: 700;
+}
+
 /*pages*/
 /*SECTION - INDEX -DESKTOP */
 .section-index div div.cuatrocontenidos {
@@ -545,6 +551,45 @@ footer .footer-group ul li {
   max-width: 300px;
 }
 
+/*SWEET ALERT CUADRO DE COMPRA*/
+div:where(.swal2-container) div:where(.swal2-popup) {
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  grid-template-columns: minmax(0, 100%);
+  width: 42em !important;
+  max-width: 100%;
+  padding: 0 0 1.25em;
+  border: none;
+  border-radius: 5px;
+  background: white !important;
+  color: #007994 !important;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: white !important;
+  color: #007994 !important;
+  font-size: 1.5em;
+}
+
+/*SWEET ALERT BOTON*/
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  border: 1rem;
+  border-radius: 0.25em;
+  border-color: #007994 !important;
+  background: initial;
+  background-color: white !important;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+}
+
 /*mediaqueries*/
 /*GLOBALES 1024PX */
 @media (max-width: 1024px) {
@@ -713,6 +758,25 @@ footer .footer-group ul li {
 @media (max-width: 1024px) {
   .main-entradasblog div.doscolumnas-blog {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .boton-azul {
+    color: white;
+    font-weight: bold;
+    background-color: #007994;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .toastify {
+    font-size: 2em;
+    padding: 1.5rem 2.3rem !important;
+    font-weight: 700;
   }
 }
 

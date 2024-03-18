@@ -252,3 +252,22 @@
         }
     }
 }
+
+//BOTONES
+@media (max-width: 768px) {
+    .boton-azul {
+        @include botones ($color-primario, bold, $color-secundario, 10px, 1rem);
+        box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+        transition: transform 0.3s;
+        text-align: center;
+    }
+}
+
+//TOASTIFY
+@media (max-width: 768px) {
+    .toastify {
+        font-size: 2em;
+        padding: 1.5rem 2.3rem !important;
+        font-weight: 700;
+    }
+}

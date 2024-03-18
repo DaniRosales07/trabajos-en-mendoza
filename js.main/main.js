@@ -2,6 +2,20 @@
     var cartTotal = 0;
 
     function addToCart(serviceName, servicePrice) {
+        Toastify({
+            text: "Servicio Agregado",
+            duration: 3000,
+            newWindow: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            className: "info",
+            style: {
+                background: "#007994",
+            },
+            onClick: function() {} // Callback after click
+        }).showToast();
+
         // Agrega el servicio al carrito
         cart.push({
             name: serviceName,
@@ -17,6 +31,8 @@
         // Actualiza el total del carrito
         updateCartTotal();
     }
+
+
 
     function removeFromCart(index) {
         // Remueve el elemento del carrito basado en el índice
@@ -73,13 +89,20 @@
         // Actualiza el elemento HTML con el total
         document.getElementById('cartTotal').textContent = cartTotal;
     }
-    window.onload = function() { updateCartTotal();
-        updateCartUI(); };
+    window.onload = function() {
+        updateCartTotal();
+        updateCartUI();
+    };
 
     function finalizarCompra() {
         // Verifica si el carrito está vacío
         if (cart.length === 0) {
-            alert('El carrito está vacío. Agrega servicios antes de finalizar la compra.');
+            Swal.fire({
+                icon: "warning",
+                title: "Oops...",
+                text: "El carrito esta vacio!",
+                footer: 'Agrega productos para comprar'
+            });
             return; // Detiene la ejecución de la función si el carrito está vacío
         }
 

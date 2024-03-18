@@ -192,3 +192,46 @@
         }
     }
 }
+
+
+/*SWEET ALERT CUADRO DE COMPRA*/
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 100%);
+    width: 42em !important;
+    max-width: 100%;
+    padding: 0 0 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: $color-primario !important;
+    color: $color-secundario!important;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: $color-primario !important;
+    color: $color-secundario !important;
+    font-size: 1.5em;
+}
+
+
+/*SWEET ALERT BOTON*/
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 1rem;
+    border-radius: 0.25em;
+    border-color: $color-secundario !important;
+    background: initial;
+    background-color: $color-primario !important;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
