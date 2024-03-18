@@ -1,5 +1,5 @@
-    var cart = JSON.parse(localStorage.getItem('cart')) || [];
-    var cartTotal = 0;
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartTotal = 0;
 
     function addToCart(serviceName, servicePrice) {
         Toastify({
@@ -49,17 +49,17 @@
     }
 
     function updateCartUI() {
-        var cartItemsElement = document.getElementById('cartItems');
+        let cartItemsElement = document.getElementById('cartItems');
         cartItemsElement.innerHTML = '';
 
         // Agrega cada elemento del carrito a la lista
         cart.forEach(function(item, index) {
-            var listItem = document.createElement('li');
+            let listItem = document.createElement('li');
             listItem.className = 'cartItem';
             listItem.textContent = item.name + ' - $' + item.price;
 
             // Agrega un botón para remover el ítem del carrito
-            var removeButton = document.createElement('button');
+            let removeButton = document.createElement('button');
             removeButton.textContent = 'Eliminar';
             removeButton.onclick = function() {
                 removeFromCart(index);
@@ -72,7 +72,7 @@
 
     function updateCartTotal() {
         // Recupera el total del carrito del Local Storage, si está disponible
-        var storedCartTotal = JSON.parse(localStorage.getItem('cartTotal'));
+        let storedCartTotal = JSON.parse(localStorage.getItem('cartTotal'));
 
         // Si hay un total almacenado en el Local Storage, lo muestra
         if (storedCartTotal !== null) {
@@ -95,29 +95,18 @@
     };
 
     function finalizarCompra() {
-        // Verifica si el carrito está vacío
-        if (cart.length === 0) {
+        cart.length === 0 ?
             Swal.fire({
                 icon: "warning",
                 title: "Oops...",
-                text: "El carrito esta vacio!",
+                text: "El carrito está vacío!",
                 footer: 'Agrega productos para comprar'
-            });
-            return; // Detiene la ejecución de la función si el carrito está vacío
-        }
-
-        // Mensaje del Carrito con Descripción
-        var mensaje = 'Hola buen día, vengo del sitio Web de Trabajos en Mendoza. Me interesan los siguientes productos:' + ' ';
-        cart.forEach(function(item) {
-            mensaje += item.name + ' - $' + item.price + ' // ';
-        });
-
-        // Agrega el total al mensaje
-        mensaje += ' Total: $' + cartTotal;
-
-        // Encuentra y reemplaza los espacios con %20 para el formato correcto en la URL
-        mensaje = mensaje.replace(/ /g, '%20');
-
-        // Envia el Mensaje por Whatsapp
-        window.location.href = 'https://api.whatsapp.com/send?phone=+5492615022513&text=' + mensaje;
+            }) :
+            (function() {
+                let mensaje = 'Hola buen día, vengo del sitio Web de Trabajos en Mendoza. Me interesan los siguientes productos:' + ' ';
+                cart.forEach(function(item) { mensaje += item.name + ' - $' + item.price + ' // '; });
+                mensaje += ' Total: $' + cartTotal;
+                mensaje = mensaje.replace(/ /g, '%20');
+                window.location.href = 'https://api.whatsapp.com/send?phone=+5492615022513&text=' + mensaje;
+            })();
     }
