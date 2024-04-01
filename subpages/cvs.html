@@ -94,51 +94,10 @@
 
     <main class="fondo-celeste espacio-costados">
         <h2 class="titulos-blancos">¡Bienvenido a nuestros servicios de Diseño de Curriculum! <br> Elige el pack de CV que quieras para vos</h2>
-        <div class="precios">
-
-            <div class="card-precios" onclick="addToCart('Diseño de CV Basic', 1500)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/cv1.webp" alt="imagen-servicio-cv1" title="imagen-servicio-cv1">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">Pack Basic</h3>
-                    <h4 class="centrar-textos">Incluye Diseño de Curriculum Personalizado y de Alto Impacto</h4>
-                    <h3 class="centrar-textos">$1500</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4>Agregar al Carrito</h4>
-                </div>
-            </div>
-
-
-            <div class="card-precios" onclick="addToCart('Carta + Const de CUIL', 500)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/cv2.webp" alt="imagen-servicio-cv2" title="imagen-servicio-cv2">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">CV + Carta de Presentación y Constancia de Cuil</h3>
-                    <h4 class="centrar-textos">Ideal para solicitar vacantes disponibles en consultoras y empresas</h4>
-                    <h3 class="centrar-textos">$500</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4>Agregar al Carrito</h4>
-                </div>
-            </div>
-
-            <div class="card-precios" onclick="addToCart('Servicio Express', 500)">
-                <div class="centrar-textos">
-                    <img src="../assets/img/cv3.webp" alt="imagen-servicio-cv3" title="imagen-servicio-cv3">
-                </div>
-                <div>
-                    <h3 class="centrar-textos espacio-textos">Servicio Express</h3>
-                    <h4 class="centrar-textos">¡No esperes más, tené tu Cv al siguiente día!</h4>
-                    <h3 class="centrar-textos">$500</h3>
-                </div>
-                <div class="boton-azul">
-                    <h4>Agregar al Carrito</h4>
-                </div>
-            </div>
+        <!-- CONTENEDOR DINAMICO -->
+        <div id="cardContainer" class="card-container precios">
         </div>
+
     </main>
 
     <section class="fondo-blanco centrar-textos espacio-textos">
@@ -178,7 +137,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="/js.main/main.js"></script>
+    <script src="/js.main/cv.js"></script>
 </body>
 
 </html>

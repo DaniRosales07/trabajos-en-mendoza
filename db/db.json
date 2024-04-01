@@ -1,0 +1,78 @@
+{
+    "pagina1": [{
+            "servicio": "Pack Basic",
+            "descripcion": "Compartimos tu publicación en Historias de IG y grupo de Whatsapp",
+            "precio": 1500,
+            "imagen": "../assets/img/cv1.webp"
+        },
+        {
+            "servicio": "Pack Carta + Constancia",
+            "descripcion": "Carta de Presentación y Constancia de Cuil para solicitar trabajo en empresas",
+            "precio": 500,
+            "imagen": "../assets/img/cv2.webp"
+        },
+        {
+            "servicio": "Servicio Express",
+            "descripcion": "¡No esperes más, tené tu Cv al siguiente día!",
+            "precio": 1000,
+            "imagen": "../assets/img/cv3.webp"
+        }
+    ],
+    "pagina2": [{
+            "servicio": "Pack Basic Laboral",
+            "descripcion": "Compartimos tu publicación en Historias de IG y grupo de Whatsapp",
+            "precio": 300,
+            "imagen": "../assets/img/empleos1.webp"
+        },
+        {
+            "servicio": "Pack Premium Laboral",
+            "descripcion": "Diseñamos, Publicamos y Destacamos tu Oferta Laboral",
+            "precio": 750,
+            "imagen": "../assets/img/empleos2.webp"
+        },
+        {
+            "servicio": "Pack Gold Laboral",
+            "descripcion": "Todos los beneficios Premium y además Publicidad Paga por un día",
+            "precio": 3600,
+            "imagen": "../assets/img/empleos3.webp"
+        }
+    ],
+    "pagina3": [{
+            "servicio": "Pack Basic Freelance",
+            "descripcion": "Compartimos tu publicación en Historias de IG y grupo de Whatsapp",
+            "precio": 300,
+            "imagen": "../assets/img/servicio1.webp"
+        },
+        {
+            "servicio": "Pack Premium Freelance",
+            "descripcion": "Diseñamos, Publicamos y Destacamos tu Oferta Laboral",
+            "precio": 750,
+            "imagen": "../assets/img/servicio2.webp"
+        },
+        {
+            "servicio": "Pack Gold Freelance",
+            "descripcion": "Todos los beneficios Premium y además Publicidad Paga por un día",
+            "precio": 3600,
+            "imagen": "../assets/img/servicio3.webp"
+        }
+    ],
+    "pagina4": [{
+            "servicio": "Optimización Perfil LinkedIn",
+            "descripcion": "Optimización en base a objetivo Laboral",
+            "precio": 3000,
+            "imagen": "../assets/img/blog4.webp"
+        },
+        {
+            "servicio": "Perfil en Portales",
+            "descripcion": "Creación y Optimización en Computrabajo, Bumeran e Indeed",
+            "precio": 3000,
+            "imagen": "../assets/img/blog3.webp"
+        },
+        {
+            "servicio": "Guía Trabajo en Tiempo Record",
+            "descripcion": "Guía de más de 40 hojas para tu búsqueda laboral (oferta promocional)",
+            "precio": 5000,
+            "imagen": "../assets/img/cv3.webp"
+        }
+    ]
+}
