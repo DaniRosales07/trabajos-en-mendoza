@@ -2,19 +2,19 @@
     "pagina1": [{
             "servicio": "Pack Basic",
             "descripcion": "Diseño de CV de Alto Impacto",
-            "precio": 3000,
+            "precio": 4000,
             "imagen": "../assets/img/cv1.webp"
         },
         {
             "servicio": "Pack Carta + Constancia",
             "descripcion": "Carta de Presentación y Constancia de Cuil para solicitar trabajo en empresas",
-            "precio": 1000,
+            "precio": 1500,
             "imagen": "../assets/img/cv2.webp"
         },
         {
             "servicio": "Servicio Express",
             "descripcion": "¡No esperes más, tené tu Cv al siguiente día!",
-            "precio": 1000,
+            "precio": 1500,
             "imagen": "../assets/img/cv3.webp"
         }
     ],
@@ -59,19 +59,19 @@
     "pagina4": [{
             "servicio": "Optimización Perfil LinkedIn",
             "descripcion": "Optimización en base a objetivo Laboral",
-            "precio": 4000,
+            "precio": 5000,
             "imagen": "../assets/img/blog4.webp"
         },
         {
             "servicio": "Perfil en Portales",
             "descripcion": "Creación y Optimización en Computrabajo, Bumeran e Indeed",
-            "precio": 4000,
+            "precio": 5000,
             "imagen": "../assets/img/blog3.webp"
         },
         {
             "servicio": "Guía Trabajo en Tiempo Record",
             "descripcion": "Guía de más de 40 hojas para tu búsqueda laboral (oferta promocional)",
-            "precio": 7000,
+            "precio": 8000,
             "imagen": "../assets/img/cv3.webp"
         }
     ]
